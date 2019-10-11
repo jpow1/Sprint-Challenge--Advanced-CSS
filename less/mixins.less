@@ -1,1 +1,18 @@
 // Mixins Here
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.para-button(@padding, @border-r, @border, @font-size, @line-h, @b-color, @color, @text-align){
+    padding: @padding;
+    border-radius: @border-r;
+    border: @border;
+    font-size: @font-size;
+    line-height:@line-h ;
+    background-color: @b-color;
+    color: @color;
+    text-align: @text-align;
+}
