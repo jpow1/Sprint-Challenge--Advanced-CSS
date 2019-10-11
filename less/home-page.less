@@ -62,8 +62,20 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+      padding: unset;
+      margin: 10px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        margin: unset;
+        padding: 10px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -80,6 +92,7 @@
 
         @media @mobile {
           width: 100%;
+          padding: 10px;
         }
       }
       .btn:hover {
@@ -91,6 +104,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: 100%;
+        margin: unset;
+      }
       
       img {
         width: 100%;
