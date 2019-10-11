@@ -1,8 +1,12 @@
 // Home Content
 
-.home {
+.home {  
+
+  
 
   .intro {
+
+    
 
     h2 {
       padding: 15px;
@@ -24,11 +28,23 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        width: 100%;
+      }
+      
     }
   }
 
   .visit-planets {
     padding: 15px;
+
+   
+      @media @mobile {
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    }
 
     h3 {
       margin-top: 11px;
@@ -58,12 +74,16 @@
       }
 
       .btn {
-        .para-button(10px 10px, 10px, none, 15px, 1em, midnightblue, white, none);
+        .para-button(10px 10px, 10px, none, 15px, 1em, #22283A, white, none);
         width: 35%;
         text-align: center;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
       .btn:hover {
-        color: midnightblue;
+        color: #22283A;
         background-color: white;
       }
     }
@@ -84,3 +104,16 @@
 .main-header {
   border-radius: 10px;
 }
+
+.sky {
+  @media @mobile {
+    display: none;
+  }
+}
+
+.launch {
+  @media @mobile {
+    display:none;
+  }
+}
+

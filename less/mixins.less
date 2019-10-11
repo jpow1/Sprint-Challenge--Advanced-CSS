@@ -1,6 +1,6 @@
 // Mixins Here
 
-.flex-box {
+.flex-box() {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -15,4 +15,10 @@
     background-color: @b-color;
     color: @color;
     text-align: @text-align;
+}
+
+.container-width() {
+    max-width: 800px;
+  width: 100%;
+  margin: 0 auto;  
 }
